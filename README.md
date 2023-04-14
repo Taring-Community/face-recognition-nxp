@@ -34,5 +34,5 @@ python3 run_inference.py --video_path <video_path>
 
 ``` sh
 # inference with image
-python3 run_inference.py --image_path <image_path>
+python3 run_inference.py --img_path <image_path>
 ```
