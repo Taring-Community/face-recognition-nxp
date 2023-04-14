@@ -1,0 +1,39 @@
+name: tensorflow
+channels:
+  - apple
+  - conda-forge
+dependencies:
+    - python=3.10
+    - pip>=19.0
+    - jupyter
+    - scikit-learn
+    - scipy
+    - pandas
+    - pandas-datareader
+    - matplotlib
+    - pillow
+    - tqdm
+    - requests
+    - h5py
+    - pyyaml
+    - flask
+    - boto3
+    - ipykernel
+    - pip:
+        - numpy
+        - tensorflow-macos
+        - tensorflow-metal
+        - bayesian-optimization
+        - gym
+        - kaggle
+        - silabs-mltk
+        - onnx
+        - onnx_tf
+        - onnx-simplifier
+        - onnxruntime
+        - openvino_dev
+        - openvino2tensorflow
+        - tensorflow_datasets
+        - torch
+        - opencv_python
+        - torchvision
