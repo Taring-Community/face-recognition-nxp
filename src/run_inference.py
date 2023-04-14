@@ -1,6 +1,7 @@
 import argparse
 import cv2
 import time
+import os
 
 from TFLiteFaceDetector import UltraLightFaceDetecion
 
@@ -67,7 +68,7 @@ def video_inference(video, model_path, color=(125, 255, 0)):
 #
 if __name__ == '__main__':
 
-    filepath = f"pretrained/version-RFB-320_int8.tflite"
+    filepath = os.path.join("../models/tflite8bit/version-RFB-320_int8.tflite")
 
     if args.img_path:
         image_inference(args.img_path, filepath)

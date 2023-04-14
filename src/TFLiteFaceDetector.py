@@ -93,7 +93,6 @@ class UltraLightFaceDetecion():
 
     def _post_processing(self, boxes, scores):
         # bounding box regression
-        print( f"--------------> {boxes.shape} - {self._size_variance} - {self._anchors_xy} - {self._anchors_wh} \n", boxes)
         boxes = self._decode_regression(boxes)
         scores = scores[:, 1]
 
